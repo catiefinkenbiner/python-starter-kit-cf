@@ -1,0 +1,4 @@
+# export environment variables which can be fed to yaml config files
+export TAMR_MY_INSTANCE_HOST="<hostname or IP>"
+export TAMR_MY_INSTANCE_USERNAME="<username>"
+export TAMR_MY_INSTANCE_PASSWORD="<pwd>"

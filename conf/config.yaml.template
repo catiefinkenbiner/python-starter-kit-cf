@@ -1,0 +1,17 @@
+my_instance_name:
+    host: "0.0.0.0"
+    protocol: "http"
+    port: "9100"
+    username: "my_user_name"
+    password: "my_password"
+
+my_other_instance:
+    host: "0.0.0.0"
+    protocol: "http"
+    port: "9100"
+    username: "my_user_name"
+    password: "my_password"
+
+logging_dir: ""
+data_input_root: ""
+data_output_root: ""
