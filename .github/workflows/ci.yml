@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - develop
+      - release-*
+  pull_request:
+    branches:
+      - develop
+      - release-*
+
+jobs:
+  Lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.6
+    - name: Install requirements
+      run: python install.py
+    - name: Run flake8
+      run: invoke lint
+    - name: Run black
+      run: invoke format
+      

@@ -1,0 +1,12 @@
+my_instance_name:
+    login:
+      username: $TAMR_MY_INSTANCE_USERNAME
+      password: $TAMR_MY_INSTANCE_PASSWORD
+    socket_address:
+      protocol: "http"
+      host: "0.0.0.0"
+      port: "9100"
+
+logging_dir: "../logs"
+
+
